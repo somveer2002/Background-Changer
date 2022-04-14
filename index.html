@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 20px 100px;
+        }
+        h1{
+            /* margin: 0; */
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            /* text-align: center; */
+            /* justify-content: center; */
+            margin: auto;
+            /* padding: 0; */
+            height: auto;
+            width: 70%;
+            display: block;
+        }
+        p{
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 30px 20px;
+            text-align: justify;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+        .btn{
+            display: inline-block;
+            height: 35px;
+            width: 35px;
+            border: 2px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .btn:hover{
+            scale: 1.1;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#00FFBF')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#EE82EE')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="txt">About Us</h1>
+    <img src="https://st2.depositphotos.com/3591429/5997/i/600/depositphotos_59977559-stock-photo-hands-holding-word-about-us.jpg" alt="not found">
+
+    <p class="txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat, harum reiciendis eaque neque iusto reprehenderit laborum esse consequuntur tempore ipsam, repudiandae dicta. Natus esse fugiat consequuntur debitis, dolores ratione? Perferendis, consequuntur deserunt, perspiciatis non quam similique cumque quisquam facere aut sapiente vero, et dicta. Exercitationem beatae repellendus dignissimos sapiente. Tempore illo odio, similique recusandae quod nisi impedit quasi sequi eos repellat modi totam non tenetur velit minus assumenda nam repudiandae saepe accusamus suscipit libero nemo corporis nobis. Amet expedita cupiditate velit tempore explicabo minima ab nam, nihil, dolorum ipsa ratione alias tenetur quos vitae, dignissimos sit vel architecto totam corporis deleniti. Natus, mollitia laborum unde dignissimos rem harum doloremque! Rerum, at totam consequuntur earum temporibus minima perferendis atque nulla laborum quae officia possimus pariatur veritatis ea neque nobis? Quas aspernatur fugit dolore reiciendis quos praesentium culpa recusandae veniam pariatur suscipit nobis doloremque consequatur eum error explicabo, quo esse libero dolorum rerum laboriosam excepturi ad eius dignissimos! Voluptatibus ad pariatur ab. Ratione quae cupiditate corrupti aut assumenda, itaque maxime libero repellendus ab dolor ipsam exercitationem iusto ipsum rerum id, alias ducimus! Sunt a consequatur cum, aut repudiandae doloremque! Repellat dignissimos quam reprehenderit in et hic officia voluptatem ad impedit! Quae excepturi quisquam modi sed doloremque asperiores, exercitationem neque accusantium sunt in autem! Inventore cumque hic quis earum placeat quod perferendis tempore, minus error? Incidunt recusandae architecto cupiditate deserunt culpa quaerat praesentium quia reiciendis nesciunt in dolore beatae, esse molestias quisquam ea quo optio! Commodi dolorem dignissimos, cumque placeat laudantium, a maiores nostrum dolor molestias eius, praesentium tempora in. Quam eligendi aspernatur sed est nemo eveniet, numquam non et, fugiat magnam cupiditate. Iste quaerat officia veritatis optio earum. Recusandae mollitia tenetur iure est consequuntur quia cupiditate ut atque et accusantium, beatae perferendis qui tempore aut reprehenderit possimus molestias. Labore assumenda nobis dolores nesciunt, repudiandae dignissimos natus vel quae debitis amet dolorem accusamus placeat facere sit omnis iure eveniet, sapiente perferendis recusandae animi enim, atque eaque nostrum! Nemo totam et suscipit at earum mollitia iste qui eius, repudiandae nesciunt quod! Nihil error debitis assumenda amet, dolorem illo doloribus. Id assumenda dicta nihil aspernatur fugiat commodi doloribus qui ab perferendis, sed cumque ducimus amet sint tempore atque error asperiores nesciunt saepe et odit facere veniam reprehenderit repellat! Ipsa laudantium doloremque ipsum ipsam similique hic minus veniam quidem aut. Delectus id, recusandae dolore commodi inventore sunt accusantium perspiciatis tempora voluptas sint natus voluptatem eveniet molestiae, qui nihil, consequatur accusamus cum deleniti. Nesciunt quam autem architecto, expedita nam enim omnis illo quisquam dolore aliquam beatae cupiditate sunt sed possimus cum optio officiis tenetur numquam excepturi! Dicta nisi illo, impedit ab voluptatum numquam cupiditate iure optio. Tenetur molestiae illum ducimus eos et rerum ipsa maiores quia itaque numquam, iure voluptatum repudiandae inventore assumenda ea earum consequatur ut, deserunt similique laborum. Error incidunt mollitia perferendis laborum officia porro dolore dignissimos neque. Quibusdam quis voluptatum sapiente deserunt. Dolores, sequi nulla animi labore, repellat non minus tenetur explicabo inventore asperiores corporis magnam. Ut suscipit inventore illum omnis atque quod!
+
+    </p>
+
+    <script>
+        function changeBG(color){
+            let ele=document.getElementsByClassName('txt');
+            if(color == '#000000'){
+                // document.body.style.color = '#ffffff';
+                for(let e of ele){
+                    e.style.color = '#ffffff';
+                }
+            }
+            else{
+                for(let e of ele){
+                    e.style.color = '#000000';
+                }
+            }
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
